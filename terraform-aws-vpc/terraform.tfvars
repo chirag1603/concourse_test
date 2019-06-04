@@ -1,4 +1,4 @@
-aws_access_key = "AKIAVXGKZL2XKQ2J7H4X"
-aws_secret_key = "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"
+aws_access_key = "AKIAZYPOAXVZRUXNIU7T"
+aws_secret_key = "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"
 aws_key_path = "."
-aws_key_name = "concourseTest"
+aws_key_name = "concourse"
