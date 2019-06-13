@@ -1,0 +1,33 @@
+---
+platform: linux
+
+resources:
+- name: git-repo
+  type: git
+  source:
+    branch: master
+    username: chirag1603
+    password: mukesh1234
+    uri: https://github.com/chirag1603/concourse_test.git
+
+jobs:
+- name: executing-script
+  plan:
+  - get: git-repo
+  - task: echo-message
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source:
+          repository: ubuntu
+      inputs:
+      - name: git-repo
+      run:
+        path: /bin/sh
+        args:
+        - -c
+        - |
+          echo "Installing Terraform"
+          echo "repo to download terraform : wget https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip"
+          terraform -v

@@ -1,0 +1,13 @@
+Q1:
+-Cat the file from Pipeline
+
+
+Q2:
+-install terraform using the link https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip
+-verify using terraform -v command
+
+
+Q3:
+-Ask for apache_log file as input 
+-Alanyze the log file and print the ip addresses which are accesing the apache in result file
+-print the IP address which is accessing the apache maximum number of times 
