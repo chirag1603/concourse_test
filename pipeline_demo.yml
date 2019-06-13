@@ -11,7 +11,7 @@ resources:
     uri: https://github.com/chirag1603/concourse_test.git
 
 jobs:
-- name: executing-script
+- name: printing-message
   plan:
   - get: git-repo
   - task: echo-message
