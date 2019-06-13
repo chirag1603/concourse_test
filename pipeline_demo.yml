@@ -29,8 +29,3 @@ jobs:
         - -c
         - |
           echo "Printing A echo Message"
-          pwd
-          ls -lrta
-          cd git-repo
-          pwd
-          ls -lrta
