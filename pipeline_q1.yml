@@ -29,6 +29,4 @@ jobs:
         - -c
         - |
           echo "Printing A echo Message"
-          pwd
-          ls -lrta
           cat apache_logs
